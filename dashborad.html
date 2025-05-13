@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | Royal Stay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome, <span id="userDisplay"></span></h2>
+    <h3>Book a Room</h3>
+    <form id="bookingForm">
+      <select id="roomType">
+        <option value="Deluxe">Deluxe - ₹3500</option>
+        <option value="Suite">Suite - ₹5000</option>
+      </select>
+      <input type="number" id="nights" placeholder="Nights" min="1" required />
+      <button type="submit">Book Now</button>
+    </form>
+
+    <h3>Your Bill</h3>
+    <div id="billDisplay"></div>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
